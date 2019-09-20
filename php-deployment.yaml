@@ -25,4 +25,4 @@ spec:
       volumes:
       - name: nginx-data
         hostPath:
-         path: /var/www/html
+          path: /var/www/html
