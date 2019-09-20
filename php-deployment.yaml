@@ -23,6 +23,6 @@ spec:
           ports:
           - containerPort: 9000
       volumes:
-        - name: nginx-data
-          hostPath:
-            path: /var/www/html
+      - name: nginx-data
+        hostPath:
+          path: /var/www/html
