@@ -28,4 +28,4 @@ spec:
           path: /var/www/html
       - name: nginx-conf
         hostPath:
-          path: ./nginx/conf
+          path: /mnt/Kubernetes-php/nginx/conf
