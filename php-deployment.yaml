@@ -18,10 +18,10 @@ spec:
         - name: php-server
           image: php:v1
           volumeMounts:
-            - mountPath: /var/www/html/
+          - mountPath: /var/www/html/
           name: nginx-data
           ports:
-            - containerPort: 9000
+          - containerPort: 9000
       volumes:
         - name: nginx-data
           hostPath:
