@@ -15,14 +15,14 @@ spec:
         app: php-server
     spec:
       containers:
-      - name: php-server
-        image: php:v1
-        volumeMounts:
-        - name: nginx-data
-          mountPath: /var/www/html/
-        ports:
-        - containerPort: 9000
+        - name: php-server
+          image: php:v1
+          volumeMounts:
+          - name: nginx-data
+            mountPath: /var/www/html/
+          ports:
+          - containerPort: 9000
       volumes:
-      - name: nginx-data
-        hostPath:
-         path: /var/www/html
+        - name: nginx-data
+          hostPath:
+            path: /var/www/html
