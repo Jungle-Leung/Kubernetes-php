@@ -26,6 +26,3 @@ spec:
       - name: nginx-data
         hostPath:
           path: /var/www/html
-      - name: nginx-conf
-        hostPath:
-          path: /mnt/Kubernetes-php/nginx/conf
