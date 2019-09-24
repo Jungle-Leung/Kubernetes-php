@@ -24,4 +24,3 @@ spec:
       - name: nginx-data
         hostPath:
           path: /var/www/html
-          type: Directory
