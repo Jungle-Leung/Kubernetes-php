@@ -19,7 +19,7 @@ spec:
           image: php:v1
           volumeMounts:
           - name: nginx-data
-            mountPath: /var/www/html
+            mountPath: /usr/share/nginx/html
           ports:
           - containerPort: 9000
       volumes:
