@@ -23,4 +23,4 @@ spec:
       volumes:
       - name: nginx-data
         hostPath:
-          path: /mnt/Kubernetes-php/nginx
+          path: /var/www/html
