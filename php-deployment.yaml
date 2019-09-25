@@ -17,5 +17,13 @@ spec:
       containers:
         - name: php-server
           image: php:v1
+          volumeMounts:
+          - name: nginx-data
+            mountPath: /usr/share/nginx/html
+            subPath: true
           ports:
           - containerPort: 9000
+      volumes:
+        - name: nginx-data
+          hostPath:
+            path: /var/www/html
