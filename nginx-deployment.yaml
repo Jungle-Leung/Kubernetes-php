@@ -20,7 +20,7 @@ spec:
         volumeMounts:
         - name: nginx-data
           mountPath: /usr/share/nginx/html
-      accessModes: ["ReadWriteMany","ReadWriteOnce"]
+          readOnly: true
       volumes:
       - name: nginx-data
         hostPath:

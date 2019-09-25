@@ -22,7 +22,6 @@ spec:
             mountPath: /usr/share/nginx/html
           ports:
           - containerPort: 9000
-      accessModes: ["ReadWriteMany","ReadWriteOnce"]
       volumes:
         - name: nginx-data
           hostPath:
